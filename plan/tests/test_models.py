@@ -54,7 +54,7 @@ class PlanModelTest(TestCase):
 
     def test_plan_item_str(self):
         plan_item = PlanItem.objects.get(id=self.plan_item1.id)
-        self.assertEqual(str(self.plan_item1), 'Item 1')
+        self.assertEqual(str(plan_item), 'Item 1')
 
 
 class PlanItemModelTest(TestCase):
